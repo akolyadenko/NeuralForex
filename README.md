@@ -40,4 +40,5 @@ Every second:
 - calls NN prediction model to render probabilities histogram
 - executes bidding strategy
 - submits orders to online Oanda account per bidding strategy directions
-- performs risk management: close all pending orders if profit/loss is not in predefined range 
+- performs risk management: close all pending orders if profit/loss is not in predefined range
+Code: [trader/TraderMain.java](https://github.com/akolyadenko/NeuralForex/blob/main/java/src/main/java/com/trd/trader/TraderMain.java)
