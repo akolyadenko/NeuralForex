@@ -1,0 +1,27 @@
+select *
+            from (
+                select * 
+                from timeframe
+                where type = 'm1'
+                    and epoch_min >= 27006592
+                    and epoch_min < 27006592 + 240
+                order by epoch_min desc
+            ) data
+            order by epoch_min;
+
+select count(*) from (select epoch_min, type, count(*) from timeframe group by 1, 2 having count(*) > 1) d;
+
+select
+    count(*)
+from example
+join example_prediction using (epoch_min)
+join timeframe using (epoch_min)
+where split = 'test'
+    and type = 'm1'
+order by epoch_min;
+
+select
+  count(*)
+from example_prediction p1
+join example_prediction p2 on p2.epoch_min = p1.epoch_min - 1
+where p1.predictions[5] > 0.7 and p2.predictions[5] > 0.7;
