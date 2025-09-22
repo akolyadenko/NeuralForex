@@ -15,5 +15,7 @@ Neural Tensorflow models predict probability of price pip change. They generate 
 Examples of models:
 
 - simple DNN model: [eurusd_buy_spread/train_model_dense.py](https://github.com/akolyadenko/NeuralForex/blob/main/py/strategies/prod/eurusd_buy_spread/train_model_dense.py)
-- convolution tree network, which convolutes multiple timeframes: [eurusd_buy_spread/train_model_tree.py](https://github.com/akolyadenko/NeuralForex/blob/main/py/strategies/prod/eurusd_buy_spread/train_model_tree.py) 
+- convolution tree network, which convolutes multiple timeframes: [eurusd_buy_spread/train_model_tree.py](https://github.com/akolyadenko/NeuralForex/blob/main/py/strategies/prod/eurusd_buy_spread/train_model_tree.py)
+- recurrent network, where each recurrent node is a block of complex subnetwork inside: [eurusd_buy_spread/train_model_recb.py](https://github.com/akolyadenko/NeuralForex/blob/main/py/strategies/prod/eurusd_buy_spread/train_model_recb.py)
+- transformer based model: [eurusd_buy_spread/train_model_transformer.py](https://github.com/akolyadenko/NeuralForex/blob/main/py/strategies/prod/eurusd_buy_spread/train_model_transformer.py)
 
