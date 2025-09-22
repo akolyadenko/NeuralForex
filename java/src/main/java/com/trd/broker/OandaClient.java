@@ -12,7 +12,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class OandaClient {
-    private static final String ACCOUNT_ID = "101-001-22536936-001";
+    private static final String ACCOUNT_ID = "101";
 
     public static void main(String[] args) throws Exception {
         System.out.println("OandaClient.main active trades: " + NiUtil.toString(getOpenPositions()));
