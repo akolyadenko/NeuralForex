@@ -5,4 +5,4 @@ Project implements end-to-end Forex trading workflow with sofisticated deep lear
 
 ## Feature engineering
 
-Various features are generated from historical data per each strategy. Example [CreateTfRecordFile.java](https://github.com/akolyadenko/NeuralForex/blob/main/java/src/main/java/com/trd/strategies/prod/eurusd_buy_spread/opt/io/CreateTfRecordFile.java)
+Various features are generated from historical data per each strategy and produced as TFRecord file. Example [eurusd_buy_spread/opt/io/CreateTfRecordFile.java](https://github.com/akolyadenko/NeuralForex/blob/main/java/src/main/java/com/trd/strategies/prod/eurusd_buy_spread/opt/io/CreateTfRecordFile.java)
